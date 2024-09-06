@@ -1,0 +1,181 @@
+/*-----body-----*/
+body{
+	margin: 0;
+	padding: 0;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url("../images/BillPayment.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	font-family:Comic Sans MS;
+}
+
+td{
+	color: white;
+}
+
+input.t{
+	margin-right: 8px;
+}
+
+.single-price{
+	text-align: center;
+	background:rgba(38, 38, 38, 0.8);
+	float: left;
+	width: 350px;
+	height: 560px;
+	transition: 1.0s;
+	margin-left: 15px;
+}
+.single-price h2{
+	font-size: 35px;
+	font-weight: 600;
+	text-align: center;
+	margin: 0;
+	margin-top: -80px;
+	font-family:Comic Sans MS;
+	color: white;
+}
+.deal-top{
+	position: relative;
+	background: #16a086;
+	font-size: 16px;
+	text-transform: uppercase;
+	padding: 130px 24px 0;
+}
+.deal-top:after{
+	position: absolute;
+	content: '';
+	left: 0;
+	bottom: -50px;
+	width: 0;
+	height: 0;
+	border-top: 50px solid #16a086;
+	border-left: 170px solid transparent;
+	border-right: 183px solid transparent;
+
+}
+.deal-bottom{
+	padding: 56px 16px 0;
+}
+.deal-bottom input[type="text"]{
+	margin-left: 20px;
+	margin-bottom: 3px;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+	border: 2px solid red;
+	color: white;
+	font-size:20px;
+	text-align: center;
+	background: none;
+
+}
+.single-price:hover{
+	background: #16a086;
+}
+.single-price:hover .deal-top{
+	background: #262626;
+}
+.single-price:hover .deal-top:after{
+	border-top: 50px solid #262626;
+}
+
+.c input[type="button"]{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #697d96;
+	color: #ffffff;
+	font-size: 18px;
+	border-radius: 20px;
+	margin-left: 98px;
+	margin-bottom:149px;
+	width: 130px;
+}
+
+.c input[type="button"]:hover{
+	cursor: pointer;
+	background: #000000;
+	color: #ffffff;
+}
+.c input[type="text"]{
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+	border: 2px solid red;
+	color: white;
+	font-size:20px;
+	text-align: center;
+	background: none;
+	margin-bottom: 50px;
+
+}
+
+.c input[type="text"]::placeholder {
+	color: white;
+}
+.a input[type="submit"]{
+	background: gray;
+	margin-left: 130px;
+  margin-top: 60px;
+	margin-bottom: 50px;
+	border-radius: 30px;
+	font-size: 18px;
+	color: white;
+	width: 100px;
+	height: 60px;
+	transition: 0.25s;
+	background-color: #16a087;
+}
+.b input[type="reset"]{
+	background: gray;
+	margin-left: 130px;
+	border-radius: 30px;
+	font-size: 18px;
+	color: white;
+	width: 100px;
+	height: 60px;
+	transition: 0.25s;
+	background-color: #16a087;
+}
+
+.a input[type="submit"]:focus{
+	width: 120px;
+	border-color: black;
+	border-width: 5px;
+	transition: 1.0s;
+	background-color: #16a087;
+}
+.b input[type="reset"]:focus{
+	width: 120px;
+	border-color: black;
+	border-width: 5px;
+	transition: 1.0s;
+	background-color: #16a087;
+}
+.a input[type="submit"]:hover{
+	background: #009e54;
+}
+.b input[type="reset"]:hover{
+	background: #009e54;
+}
+
+/*----Footer----*/
+footer{
+  background: #1a1a1a;
+  color: #ffffff; 
+  position: fixed;
+  height: 50;
+  width: 100%;
+  font-size: 0.8em;
+  bottom: 0;
+}
+
+/*----Date and Time----*/
+div.c{
+    padding:0;
+    margin:0;
+    float: right;
+    line-height:0;
+}

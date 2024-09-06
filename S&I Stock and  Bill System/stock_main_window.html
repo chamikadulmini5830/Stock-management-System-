@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Stock Main Window</title>
+	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="css/stock.css">
+	<!--JavaScript-->
+	<script src="js/RightClickDisable.js"></script>
+	
+</head>
+<body>
+	<!--Back Button-->
+
+	<input type="button" name="btn_Back" class="bb" value="<<<Bill Payment" onclick= location.href='Bill_Payment.html'>
+
+	<!--Tabs-->
+
+<div class="mytabs">
+	
+
+	<input type="radio" id="tab1" name="mytabs" checked="checked">
+
+	<label for="tab1"><b>Stock Master File</b></label>
+
+	<div class="tab">
+		<form>
+		<table>
+			<tr>
+				<td>Item code:</td><td><input type="text" class="no-outline" size="50px" name="Item_code"></td>
+			</tr>
+			<tr>
+				<td>Item name:</td><td><input type="text" class="no-outline" size="50px" name="Item_name"></td>
+			</tr>
+			<tr>
+				<td>Item price:</td><td><input type="text" class="no-outline" size="50px" name="Item_price"></td>
+			</tr>
+			<tr>
+				<td>Available quantity:</td><td><input type="text" class="no-outline" size="50px" name="Available_quantity"></td>
+			</tr>
+			<tr>
+				<td>Stock balance:</td><td><input type="text"class="no-outline" size="50px" name="Stock_balance"></td>
+			</tr>
+			<tr>
+				<td>Stock level:</td><td><input type="text" class="no-outline" size="50px" name="Stock_level"></td>
+			</tr>
+			<tr>
+				<td>Last date of transaction:</td><td><input type="text" class="no-outline" size="50px" name="Last_date_of_transaction"></td>
+			</tr>
+			<tr>
+				<td><input type="submit" formaction="Stock_add.php" formmethod="POST" class="btn" value="Add"></td><td><input type="submit" formaction="Stock_search.php" formmethod="POST"  class="btn" value="Search"></td><td><input type="submit" formaction="stock_Update.html" formmethod="POST"  class="btn" value="Edit"> </td><td><input type="submit" formaction="Stock_delete.php" formmethod="POST" class="btnC" value="Delete">
+				<input type="reset" class="btnC" value="Clear"></td>
+			</tr>
+		</table>
+		</form>
+	</div>
+
+	<input type="radio" id="tab2" name="mytabs">
+	<label for="tab2"><b>Transaction File</b></label>
+	<div class="tab">
+		<form>
+		<table>
+			<tr>
+				<td>Item code:</td><td><input type="text" class="no-outline" size="50px" name="Item_code"></td>
+			</tr>
+			<tr>
+				<td>Item name:</td><td><input type="text" class="no-outline" size="50px" name="Item_name"></td>
+			</tr>
+			<tr>
+				<td>Transaction type:</td><td><input type="text" class="no-outline" size="50px" name="Transaction_type"></td>
+			</tr>
+			<tr>
+				<td>Transaction quantity:</td><td><input type="text" class="no-outline" size="50px" name="Transaction_quantity"></td>
+			</tr>
+			<tr>
+				<td>Transaction amount:</td><td><input type="text" class="no-outline" size="50px" name="Transaction_amount"></td>
+			</tr>
+			<tr>
+				<td>New stock balance:</td><td><input type="text" class="no-outline" size="50px" name="New_stock_balance"></td>
+			</tr>
+			<tr><td></td></tr>
+			<tr class="btn">
+				<td><input type="submit" formaction="Trans_add.php" formmethod="POST" class="btn" value="Add"></td><td><input type="submit" formaction="Trans_search.php" formmethod="POST"  class="btn" value="Search"></td><td><input type="submit" formaction="trans_Update.html" formmethod="POST"  class="btn" value="Edit"> </td><td><input type="submit" formaction="Trans_delete.php" formmethod="POST" class="btnC" value="Delete">
+				<input type="reset" class="btnC" value="Clear"></td>
+			</tr>
+		</table>
+		</form>
+	</div>
+
+	<input type="radio" id="tab3" name="mytabs">
+	<label for="tab3"><b>Supplier Registration</b></label>
+	<div class="tab">
+		<form>
+		<table>
+			<tr>
+				<td>Supplier number:</td><td><input type="text" class="no-outline" size="50px" name="Supplier_number"></td>
+			</tr>
+			<tr>
+				<td>Supplier name:</td><td><input type="text" class="no-outline" size="50px" name="Supplier_name"></td>
+			</tr>
+			<tr>
+				<td>Item type:</td><td><input type="text" class="no-outline" size="50px" name="Item_type"></td>
+			</tr>
+			<tr>
+				<td>Contact no:</td><td><input type="text" class="no-outline" size="50px" name="Contact_no"></td>
+			</tr>
+			<tr>
+				<td>E-mail address:</td><td><input type="text" class="no-outline" size="50px" name="Email_address"></td>
+			</tr>
+			<tr>
+				<td>Registration date:</td><td><input type="text" class="no-outline" size="50px" name="Registration_date"></td>
+			</tr>
+			<tr><td></td></tr>
+			<tr class="btn">
+				<td><input type="submit" formaction="Sup_add.php" formmethod="POST" class="btn" value="Add"></td><td><input type="submit" formaction="Sup_search.php" formmethod="POST"  class="btn" value="Search"></td><td><input type="submit" formaction="Sup_Update.html" formmethod="POST"  class="btn" value="Edit"> </td><td><input type="submit" formaction="Sup_delete.php" formmethod="POST" class="btnC" value="Delete">
+				<input type="reset" class="btnC" value="Clear"></td>
+			</tr>
+		</table>
+		</form>
+	</div>
+</div>
+
+<!--Footer-->
+
+<footer>
+	&copy;<script>document.write(new Date().getFullYear());</script> All rights reserved. by S & I Software Solutions
+	<br> Designed by Ishan Pathirana | Developed by Shehan Ranasinghe
+
+	<!-- Date and Time -->
+
+	<div class="c">
+	<script>
+		document.write("Date : ");document.write(new Date().getFullYear());document.write("-");
+		document.write(new Date().getMonth()+1);document.write("-");
+		document.write(new Date().getDate());
+		document.write("    |    ");
+		document.write("Time : ");document.write(new Date().getHours());document.write(":");
+		document.write(new Date().getMinutes());document.write(":");
+		document.write(new Date().getSeconds());
+	</script>
+	</div>
+
+</footer>
+
+</body>
+</html>

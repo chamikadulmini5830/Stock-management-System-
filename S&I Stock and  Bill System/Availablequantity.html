@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Available Quantity</title>
+	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="css/StockUpdate.css">
+	<!--JavaScript-->
+	<script src="js/RightClickDisable.js"></script>
+</head>
+<body>
+	<!--Back Button-->
+
+	<input type="button" name="btn_Back" class="bb" value="<<< Stock Update" onclick= location.href='stock_Update.html'>
+	<form action="Availablequantity.php" method="POST">
+	<table>
+      <tr><td>Item Code </td></tr><tr><td><input type="text" name="txtIC" class="no-outline"></td></tr>
+      <tr><td>Available Quantity </td></tr><tr><td><input type="text" name="txtAQ" class="no-outline"></td></tr> 
+      <tr><td><input type="submit" name="submit" class="btn" value="Update"></td></tr>
+	</table>
+	</form>
+
+    <!--Footer-->
+
+<footer>
+	&copy;<script>document.write(new Date().getFullYear());</script> All rights reserved. by S & I Software Solutions
+	<br> Designed by Ishan Pathirana | Developed by Shehan Ranasinghe
+
+	<!-- Date and Time -->
+
+	<div class="c">
+	<script>
+		document.write("Date : ");document.write(new Date().getFullYear());document.write("-");
+		document.write(new Date().getMonth()+1);document.write("-");
+		document.write(new Date().getDate());
+		document.write("    |    ");
+		document.write("Time : ");document.write(new Date().getHours());document.write(":");
+		document.write(new Date().getMinutes());document.write(":");
+		document.write(new Date().getSeconds());
+	</script>
+	</div>
+
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Select_Update</title>
+	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="css/trans_Update.css">
+	<!--JavaScript-->
+	<script src="js/RightClickDisable.js"></script>
+</head>
+<body>
+	<!--Back Button-->
+
+	<input type="button" name="btn_Back" class="bb" value="<<< Stock Form" onclick= location.href='stock_main_window.html'>
+		
+	<form>
+		<table>
+			<tr>
+				<td><input type="submit" formaction="Transaction_type.html" formmethod="POST" name="btnTt" class="btn" value="Transaction type"></td>
+				<td><input type="submit" formaction="Transaction_quantity.html" formmethod="POST" name="btnTq" class="btn" value=" Transaction quantity"></td>
+				<td><input type="submit" formaction="Transaction_amount.html" formmethod="POST" name="btnTa" class="btn" value=" Transaction amount"></td>
+				<td><input type="submit" formaction="New_stock_balance.html" formmethod="POST" name="btnNSB" class="btn"value=" New stock balance"></td>
+			</tr>
+		</table>
+	</form>
+
+<!--Footer-->
+
+<footer>
+	&copy;<script>document.write(new Date().getFullYear());</script> All rights reserved. by S & I Software Solutions
+	<br> Designed by Ishan Pathirana | Developed by Shehan Ranasinghe
+
+	<!-- Date and Time -->
+
+	<div class="c">
+	<script>
+		document.write("Date : ");document.write(new Date().getFullYear());document.write("-");
+		document.write(new Date().getMonth()+1);document.write("-");
+		document.write(new Date().getDate());
+		document.write("    |    ");
+		document.write("Time : ");document.write(new Date().getHours());document.write(":");
+		document.write(new Date().getMinutes());document.write(":");
+		document.write(new Date().getSeconds());
+	</script>
+	</div>
+
+</footer>
+
+</body>
+</html>

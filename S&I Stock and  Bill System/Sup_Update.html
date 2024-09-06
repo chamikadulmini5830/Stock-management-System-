@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Select_Update</title>
+	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="css/Sup_Update.css">
+	<!--JavaScript-->
+	<script src="js/RightClickDisable.js"></script>
+</head>
+<body>
+	<!--Back Button-->
+
+	<input type="button" name="btn_Back" class="bb" value="<<< Stock Form" onclick= location.href='stock_main_window.html'>
+		
+	<form>
+		<table>
+			<tr>
+				<td><input type="submit" formaction="Item_type.html" formmethod="POST" name="btnSupIt" class="btn" value="Item Type"></td>
+				<td><input type="submit" formaction="Contact_no.html" formmethod="POST" name="btnCn" class="btn" value=" Contact no"></td>
+				<td><input type="submit" formaction="Email_address.html" formmethod="POST" name="btnEmail" class="btn" value=" E-mail address"></td>
+			</tr>
+		</table>
+	</form>
+
+<!--Footer-->
+
+<footer>
+	&copy;<script>document.write(new Date().getFullYear());</script> All rights reserved. by S & I Software Solutions
+	<br> Designed by Ishan Pathirana | Developed by Shehan Ranasinghe
+
+	<!-- Date and Time -->
+
+	<div class="c">
+	<script>
+		document.write("Date : ");document.write(new Date().getFullYear());document.write("-");
+		document.write(new Date().getMonth()+1);document.write("-");
+		document.write(new Date().getDate());
+		document.write("    |    ");
+		document.write("Time : ");document.write(new Date().getHours());document.write(":");
+		document.write(new Date().getMinutes());document.write(":");
+		document.write(new Date().getSeconds());
+	</script>
+	</div>
+
+</footer>
+
+</body>
+</html>

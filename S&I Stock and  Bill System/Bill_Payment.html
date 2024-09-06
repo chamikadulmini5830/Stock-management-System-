@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bill Payment</title>
+	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="css/billPayment.css">
+	<!--JavaScript-->
+	<script src="js/RightClickDisable.js"></script>
+</head>
+<body>
+	<form action="Bill_Payment.php" method="POST">
+<div class="pricing-area">
+	<div class="container">
+		<div class="row">
+			<div class="col-mod-4">
+				<div class="single-price">
+					<div class="deal-top">
+						<h2>Item list</h2>
+					</div>
+					<div class="deal-bottom">
+						<table>
+	                       <tr><td>1.<input type="text" name="I1"></td></tr>
+	                       <tr><td>2.<input type="text" name="I2"></td></tr>
+	                       <tr><td>3.<input type="text" name="I3"></td></tr>
+	                       <tr><td>4.<input type="text" name="I4"></td></tr>
+	                       <tr><td>5.<input type="text" name="I5"></td></tr>
+	                       <tr><td>6.<input type="text" name="I6"></td></tr>
+	                       <tr><td>7.<input type="text" name="I7"></td></tr>
+	                       <tr><td>8.<input type="text" name="I8"></td></tr>
+	                       <tr><td>9.<input type="text" name="I9"></td></tr>
+	                       <tr><td>10.<input type="text" class="t" name="I10"></td></tr>
+                        </table>
+					</div>
+				</div>
+			</div>
+			<div class="col-mod-4">
+				<div class="single-price">
+					<div class="deal-top">
+						<h2>Price list</h2>
+					</div>
+					<div class="deal-bottom">
+						<table>
+	                       <tr><td>1.<input type="text" name="P1"></td></tr>
+	                       <tr><td>2.<input type="text" name="P2"></td></tr>
+	                       <tr><td>3.<input type="text" name="P3"></td></tr>
+	                       <tr><td>4.<input type="text" name="P4"></td></tr>
+	                       <tr><td>5.<input type="text" name="P5"></td></tr>
+	                       <tr><td>6.<input type="text" name="P6"></td></tr>
+	                       <tr><td>7.<input type="text" name="P7"></td></tr>
+	                       <tr><td>8.<input type="text" name="P8"></td></tr>
+	                       <tr><td>9.<input type="text" name="P9"></td></tr>
+	                       <tr><td>10.<input type="text" class="t" name="P10"></td></tr>
+                        </table>
+					</div>
+				</div>
+			</div>
+			<div class="col-mod-4">
+				<div class="single-price">
+					<div class="deal-top">
+						<h2>Quantity</h2>
+					</div>
+					<div class="deal-bottom">
+						<table>
+	                       <tr><td>1.<input type="text" name="Q1"></td></tr>
+	                       <tr><td>2.<input type="text" name="Q2"></td></tr>
+	                       <tr><td>3.<input type="text" name="Q3"></td></tr>
+	                       <tr><td>4.<input type="text" name="Q4"></td></tr>
+	                       <tr><td>5.<input type="text" name="Q5"></td></tr>
+	                       <tr><td>6.<input type="text" name="Q6"></td></tr>
+	                       <tr><td>7.<input type="text" name="Q7"></td></tr>
+	                       <tr><td>8.<input type="text" name="Q8"></td></tr>
+	                       <tr><td>9.<input type="text" name="Q9"></td></tr>
+	                       <tr><td>10.<input type="text" class="t" name="Q10"></td></tr>
+                        </table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="c">
+<input type="button" value=" Stock >>>" onclick= location.href='stock_main_window.html'>
+</div>
+<div class="c">
+<input type="text" name="dis" placeholder="Discount">
+</div>
+<div class="c">
+<input type="text" name="tot" placeholder="Total">
+</div>
+<div class="a">
+	<input type="submit" value="Calculate">
+</div>
+<div class="b">
+    <input type="reset" value="clear">
+</div>
+
+</form>
+    <!--Footer-->
+
+<footer>
+	&copy;<script>document.write(new Date().getFullYear());</script> All rights reserved. by S & I Software Solutions
+	<br> Designed by Ishan Pathirana | Developed by Shehan Ranasinghe
+
+	<!-- Date and Time -->
+
+	<div class="c">
+	<script>
+		document.write("Date : ");document.write(new Date().getFullYear());document.write("-");
+		document.write(new Date().getMonth()+1);document.write("-");
+		document.write(new Date().getDate());
+		document.write("    |    ");
+		document.write("Time : ");document.write(new Date().getHours());document.write(":");
+		document.write(new Date().getMinutes());document.write(":");
+		document.write(new Date().getSeconds());
+	</script>
+	</div>
+
+</footer>
+
+</body>
+</html>
